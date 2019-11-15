@@ -1,3 +1,10 @@
+<nav class="navbar navbar-light bg-white">
+  <a class="navbar-brand" href="/cocktails">FindMyCocktail.com</a>
+  <form class="form-inline">
+    <%= link_to "Back to the cocktails list", cocktails_path, class: "btn btn-outline-success" %>
+  </form>
+</nav>
+
 <h1><%= @cocktail.name %></h1>
 
 <%= link_to "Add description", new_cocktail_dose_path(@cocktail) %>
